@@ -24,10 +24,10 @@
      </rect>
     </property>
     <property name="rowCount">
-     <number>40</number>
+     <number>8</number>
     </property>
     <property name="columnCount">
-     <number>40</number>
+     <number>8</number>
     </property>
     <attribute name="horizontalHeaderVisible">
      <bool>false</bool>
@@ -36,7 +36,7 @@
      <number>20</number>
     </attribute>
     <attribute name="horizontalHeaderDefaultSectionSize">
-     <number>20</number>
+     <number>100</number>
     </attribute>
     <attribute name="verticalHeaderVisible">
      <bool>false</bool>
@@ -45,7 +45,7 @@
      <number>20</number>
     </attribute>
     <attribute name="verticalHeaderDefaultSectionSize">
-     <number>20</number>
+     <number>100</number>
     </attribute>
     <row/>
     <row/>
@@ -55,70 +55,6 @@
     <row/>
     <row/>
     <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <row/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
-    <column/>
     <column/>
     <column/>
     <column/>

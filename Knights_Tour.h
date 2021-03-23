@@ -25,10 +25,11 @@ private:
     int xMoves[8] = { 2, 1, -1, -2, -2, -1,  1,  2 };
     int yMoves[8] = { 1, 2,  2,  1, -1, -2, -2, -1 };
 
-    const int MAX = 1600;
+    static constexpr int n = 8;
+    const int MAX = n * n;
     const int FREE = 0;
 
-    int board[40][40];
+    int board[n][n];
 
     bool running = false;
 

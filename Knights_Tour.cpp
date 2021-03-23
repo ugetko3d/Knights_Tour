@@ -20,7 +20,7 @@ Knights_Tour::~Knights_Tour()
 
 bool Knights_Tour::validMove(int row, int col)
 {
-	if (row >= 0 && row < 40 && col >= 0 && col < 40)
+	if (row >= 0 && row < n && col >= 0 && col < n)
 		return board[row][col] == FREE;
 	return false;
 }
@@ -64,6 +64,11 @@ bool Knights_Tour::solveWarnsdorff(int row, int col, int move)
 	ny = yMoves[min_deg_idx];
 
 	board[row + nx][col + ny] = move;
+
+	ui.tbl_grid->item(row + nx, col + ny)->setBackground(Qt::blue);
+	ui.tbl_grid->repaint();
+	Sleep(500);
+
 	ui.tbl_grid->item(row + nx, col + ny)->setBackground(Qt::green);
 	ui.tbl_grid->repaint();
 
@@ -80,9 +85,9 @@ bool Knights_Tour::solveWarnsdorff(int row, int col, int move)
 
 void Knights_Tour::onButtonResetClicked()
 {
-    for (int i = 0; i < 40; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < 40; j++)
+        for (int j = 0; j < n; j++)
         {
             board[i][j] = 0;
             if (!ui.tbl_grid->item(i, j))
@@ -100,7 +105,12 @@ void Knights_Tour::onCellClicked(int row, int col)
 
 	running = true;
 
-	if (solveWarnsdorff(row, col, 1))
+	board[row][col] = 1;
+	ui.tbl_grid->item(row, col)->setBackground(Qt::green);
+	ui.tbl_grid->item(row, col)->setSelected(false);
+	ui.tbl_grid->repaint();
+
+	if (solveWarnsdorff(row, col, 2))
 	{
 		messageBox->setText("We found a solution!");
 		messageBox->show();
